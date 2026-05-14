@@ -1,0 +1,53 @@
+# Site settings
+title: Associazione Atypical
+description: >-
+  A non-profit cultural and recreational association founded in 2018,
+  dedicated to creating inclusive communities and empowering individuals
+  with diverse backgrounds. Based in Minori, Salerno, Italy.
+baseurl: ""
+url: ""
+
+# Owner/Author info
+author:
+  name: Associazione Atypical
+  email: contact@associazioneatypical.org
+
+# Theme
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Navigation
+header_pages:
+  - about.md
+  - statute.md
+  - members.md
+  - projects.md
+  - events.md
+  - contact.md
+
+# Minima theme settings
+minima:
+  skin: dark
+  social_links:
+    # - { platform: github, user_url: "https://github.com/yourusername" }
+    # - { platform: twitter, user_url: "https://twitter.com/yourhandle" }
+    # - { platform: facebook, user_url: "https://facebook.com/yourpage" }
+    # - { platform: linkedin, user_url: "https://linkedin.com/company/yourcompany" }
+
+# Build settings
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
+# Exclude from processing
+exclude:
+  - .github/
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Copy-Item \"G:\\\\My Drive\\\\Documents\\\\Associazione Atypical\\\\Associazione\\\\Grafica \\(logo, copertina, timbro\\)\\\\Logo\\\\Logo-Atypical-quadrato.jpg\" \"G:\\\\My Drive\\\\Documents\\\\Associazione Atypical\\\\Website\\\\assets\\\\images\\\\logo.png\")",
+      "PowerShell(Copy-Item \"G:\\\\My Drive\\\\Documents\\\\Associazione Atypical\\\\Associazione\\\\Grafica \\(logo, copertina, timbro\\)\\\\Logo\\\\Logo-Atypical-quadrato.jpg\" \"G:\\\\My Drive\\\\Documents\\\\Associazione Atypical\\\\Website\\\\assets\\\\images\\\\logo.jpg\")",
+      "mcp__plugin_pdf-viewer_pdf__display_pdf",
+      "Bash(cd /tmp)",
+      "Bash(python3)"
+    ]
+  }
+}
