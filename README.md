@@ -1,113 +1,47 @@
-# Associazione Atypical Website
+# giovami APS
 
-This is the official website for Associazione Atypical, built with Jekyll and hosted on GitHub Pages.
+Sito ufficiale di **giovami APS** (già Associazione Atypical), ente del terzo settore con sede a Minori (SA), Costiera Amalfitana.
 
-## Project Structure
+## Stack
 
-```
-.
-├── _posts/              # Blog posts and news articles
-├── _layouts/            # Page layouts (handled by theme)
-├── _includes/           # Reusable HTML components
-├── assets/              # Images, CSS, and other assets
-├── _config.yml          # Jekyll configuration
-├── index.md             # Homepage
-├── about.md             # About page
-├── events.md            # Events page
-├── contact.md           # Contact page
-├── Gemfile              # Ruby dependencies
-└── README.md            # This file
-```
+- [Vite](https://vitejs.dev/) + React + TypeScript
+- [Tailwind CSS](https://tailwindcss.com/), con i token del brand (`tailwind.config.js`) presi da `GiovaMI Identita visiva.html`
+- `react-router-dom` (HashRouter, per compatibilità diretta con GitHub Pages)
 
-## Getting Started
+## Sviluppo
 
-### Prerequisites
-- Ruby 2.7 or higher
-- Bundler
-
-### Installation
-
-1. Clone this repository:
 ```bash
-git clone https://github.com/your-username/giovami.git
-cd giovami
+npm install
+npm run dev
 ```
 
-2. Install dependencies:
+## Build
+
 ```bash
-bundle install
+npm run build
+npm run preview
 ```
 
-3. Build and serve locally:
-```bash
-bundle exec jekyll serve
+Il sito è servito sotto `/giovami/` (vedi `base` in `vite.config.ts`), pensato per GitHub Pages come project site.
+
+## Struttura
+
+```
+src/
+├── components/   # Logo, Header, Footer, BoardMemberCard, TimelineItem, FinancialTable
+├── pages/        # Home, ChiSiamo, Timeline, Trasparenza, Contatti
+├── data/         # board.ts, milestones.ts, finances.ts — contenuti reali, no dati fittizi
+└── assets/images/
+public/
+└── documents/statuto-giovami-aps.pdf
 ```
 
-Visit `http://localhost:4000` in your browser to see the site.
+## Deploy
 
-## Adding Content
+Push su `main` attiva `.github/workflows/deploy.yml`, che builda ed effettua il deploy su GitHub Pages tramite Actions. Va abilitato "GitHub Actions" come source in Settings → Pages del repository, una tantum.
 
-### Adding Blog Posts
+## Note su privacy e contenuti
 
-Create a new file in `_posts/` with the naming convention `YYYY-MM-DD-title.md`:
-
-```markdown
----
-layout: post
-title: "Your Post Title"
-date: 2026-05-14
-categories: news
----
-
-Your post content here...
-```
-
-### Adding Images
-
-Place images in `assets/images/` and reference them in your posts:
-
-```markdown
-![Alt text](/assets/images/your-image.jpg)
-```
-
-### Updating Pages
-
-Edit the `.md` files directly (about.md, events.md, contact.md, etc.)
-
-## Configuration
-
-Edit `_config.yml` to customize:
-- Site title and description
-- Author information
-- Navigation menu
-- Theme settings
-- Social media links
-
-## Deployment
-
-This site is automatically deployed to GitHub Pages when you push to the `master` branch.
-
-Your site will be available at: `https://your-username.github.io/giovami`
-
-## Theme
-
-Currently using the **Minima** theme. To use a different theme, update `_config.yml`:
-
-```yaml
-theme: theme-name
-```
-
-Popular alternatives:
-- minimal
-- cayman
-- slate
-- leap-day
-
-## Support
-
-For questions or issues, please contact us through the website contact page.
-
-## License
-
-© 2026 Associazione Atypical. All rights reserved.
-# giovami
+- I dati economici in `src/data/finances.ts` sono trascritti dai rendiconti interni dell'associazione (2018–2023); 2024–2025 sono segnalati come attività minima, in modo trasparente.
+- Il roster del Consiglio Direttivo (`src/data/board.ts`) riporta solo nome e ruolo dei membri attuali — nessun dato personale (codice fiscale, indirizzo, contatti privati) va mai aggiunto qui.
+- I contatti in `src/pages/Contatti.tsx` sono segnaposto (`TODO`) fino a conferma dei recapiti reali.
