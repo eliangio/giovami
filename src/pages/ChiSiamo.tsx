@@ -1,5 +1,7 @@
 import { boardMembers } from '../data/board'
+import { milestones } from '../data/milestones'
 import { BoardMemberCard } from '../components/BoardMemberCard'
+import { TimelineItem } from '../components/TimelineItem'
 
 const values = [
   {
@@ -66,6 +68,14 @@ export function ChiSiamo() {
           missione: restare un punto di riferimento per i giovani di Minori e della Costiera
           Amalfitana.
         </p>
+      </div>
+
+      <p className="eyebrow mb-3">Dal 2018 a oggi</p>
+      <h2 className="text-2xl font-semibold text-blu-notte mb-10">Le tappe principali</h2>
+      <div className="relative mb-20 before:absolute before:left-0 sm:before:left-1/2 before:top-0 before:bottom-0 before:w-px before:bg-grigio-caldo/30 before:-translate-x-1/2 sm:before:translate-x-0">
+        {milestones.map((m, i) => (
+          <TimelineItem key={m.title} milestone={m} index={i} />
+        ))}
       </div>
 
       <p className="eyebrow mb-3">I nostri valori</p>

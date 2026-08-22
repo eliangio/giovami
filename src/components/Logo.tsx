@@ -2,6 +2,7 @@ type LogoProps = {
   variant?: 'positiva' | 'negativa'
   size?: number
   showEts?: boolean
+  straight?: boolean
   className?: string
 }
 
@@ -9,8 +10,17 @@ type LogoProps = {
  * The giova/mi wordmark, reproduced from GiovaMI Identita visiva.html:
  * two spans skewed in opposite directions meeting at a shared vertex,
  * with ETS tucked into the pocket the fold opens beneath "mi".
+ *
+ * `straight` drops the skew/scale fold, rendering both halves on a flat
+ * baseline — used where the angled "piega" doesn't fit the layout.
  */
-export function Logo({ variant = 'positiva', size = 32, showEts = true, className = '' }: LogoProps) {
+export function Logo({
+  variant = 'positiva',
+  size = 32,
+  showEts = true,
+  straight = false,
+  className = '',
+}: LogoProps) {
   const giovaColor = variant === 'positiva' ? '#1C2E5E' : '#FFFFFF'
   const miColor = '#EE7623'
   const etsColor = variant === 'positiva' ? '#1C2E5E' : '#FFFFFF'
@@ -23,7 +33,7 @@ export function Logo({ variant = 'positiva', size = 32, showEts = true, classNam
       <span
         style={{
           display: 'inline-block',
-          transform: 'skewY(18deg) scaleY(0.94)',
+          transform: straight ? undefined : 'skewY(18deg) scaleY(0.94)',
           transformOrigin: 'right center',
           fontWeight: 600,
           letterSpacing: '-0.035em',
@@ -36,7 +46,7 @@ export function Logo({ variant = 'positiva', size = 32, showEts = true, classNam
         <span
           style={{
             display: 'inline-block',
-            transform: 'skewY(-18deg) scaleY(0.94)',
+            transform: straight ? undefined : 'skewY(-18deg) scaleY(0.94)',
             transformOrigin: 'left center',
             fontWeight: 700,
             letterSpacing: '-0.04em',

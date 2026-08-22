@@ -1,16 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Milestone } from '../data/milestones'
-
-const images: Record<string, string> = {}
-const modules = import.meta.glob('../assets/images/*.{jpg,png}', {
-  eager: true,
-  query: '?url',
-  import: 'default',
-})
-for (const path in modules) {
-  const key = path.split('/').pop()!.replace(/\.(jpg|png)$/, '')
-  images[key] = modules[path] as string
-}
+import { images } from '../lib/images'
 
 export function TimelineItem({ milestone, index }: { milestone: Milestone; index: number }) {
   const ref = useRef<HTMLDivElement>(null)

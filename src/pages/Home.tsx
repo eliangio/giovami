@@ -43,7 +43,7 @@ export function Home() {
       <section className="mx-auto max-w-5xl px-6 pt-20 pb-16 text-center">
         <p className="eyebrow mb-6">Minori (SA) · Costiera Amalfitana</p>
         <Link to="/chi-siamo" className="inline-block">
-          <Logo size={64} className="justify-center" />
+          <Logo size={64} straight className="justify-center" />
         </Link>
         <p className="mt-8 text-lg text-oliva-scuro max-w-2xl mx-auto">
           Associazione giovanile — Ente del Terzo Settore. Nata come Atypical nel 2018, oggi{' '}
@@ -83,12 +83,12 @@ export function Home() {
 
       <section className="mx-auto max-w-5xl px-6 py-16">
         <p className="eyebrow mb-3">In evidenza</p>
-        <h2 className="text-2xl font-semibold text-blu-notte mb-10">Uno sguardo alla nostra storia</h2>
+        <h2 className="text-2xl font-semibold text-blu-notte mb-10">Uno sguardo ai nostri progetti</h2>
         <div className="grid gap-6 sm:grid-cols-3">
           {[
-            { img: bibliotecaImg, label: 'Biblioteca Angela Lembo', to: '/timeline' },
-            { img: coppaImg, label: 'Coppa Reghinna Minor', to: '/timeline' },
-            { img: bookcrossingImg, label: 'Bookcrossing', to: '/timeline' },
+            { img: bibliotecaImg, label: 'Biblioteca Angela Lembo', to: '/progetti' },
+            { img: coppaImg, label: 'Coppa Reghinna Minor', to: '/progetti' },
+            { img: bookcrossingImg, label: 'Bookcrossing', to: '/progetti' },
           ].map((item) => (
             <Link key={item.label} to={item.to} className="group block">
               <div className="aspect-[4/3] overflow-hidden rounded-sm bg-grigio-caldo/10">
@@ -105,8 +105,8 @@ export function Home() {
           ))}
         </div>
         <div className="mt-10 text-center">
-          <Link to="/timeline" className="text-arancio font-semibold hover:underline">
-            Scopri la timeline completa →
+          <Link to="/progetti" className="text-arancio font-semibold hover:underline">
+            Scopri tutti i progetti →
           </Link>
         </div>
       </section>

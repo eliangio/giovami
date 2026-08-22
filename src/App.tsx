@@ -3,7 +3,7 @@ import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { Home } from './pages/Home'
 import { ChiSiamo } from './pages/ChiSiamo'
-import { Timeline } from './pages/Timeline'
+import { Progetti } from './pages/Progetti'
 import { Trasparenza } from './pages/Trasparenza'
 import { Contatti } from './pages/Contatti'
 
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/chi-siamo" element={<ChiSiamo />} />
-          <Route path="/timeline" element={<Timeline />} />
+          <Route path="/progetti" element={<Progetti />} />
           <Route path="/trasparenza" element={<Trasparenza />} />
           <Route path="/contatti" element={<Contatti />} />
         </Routes>

@@ -4,7 +4,7 @@ import { Logo } from './Logo'
 const links = [
   { to: '/', label: 'Home' },
   { to: '/chi-siamo', label: 'Chi siamo' },
-  { to: '/timeline', label: 'Storia' },
+  { to: '/progetti', label: 'Progetti' },
   { to: '/trasparenza', label: 'Trasparenza' },
   { to: '/contatti', label: 'Contatti' },
 ]
