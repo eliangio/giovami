@@ -11,6 +11,7 @@ export const milestones: Milestone[] = [
     title: 'Nasce Atypical',
     description:
       'Un gruppo di ragazzi di Minori fonda l’Associazione Atypical: cultura, divertimento e senso di appartenenza al territorio per la fascia giovanile della Costiera Amalfitana.',
+    image: 'logo-atypical',
   },
   {
     year: '2019',
@@ -23,14 +24,21 @@ export const milestones: Milestone[] = [
     year: '2019–2023',
     title: 'Biblioteca Comunale “Angela Lembo”',
     description:
-      'I soci rilanciano e catalogano da zero la biblioteca comunale — oltre 3.250 libri, adesione al Polo SBN Napoli — trasformandola in un punto di ritrovo per lo studio e l’aggregazione.',
+      'I soci rilanciano e catalogano da zero la biblioteca comunale — oltre 3.250 libri — trasformandola in un punto di ritrovo per lo studio e l’aggregazione.',
     image: 'biblioteca-angela-lembo',
   },
   {
-    year: '2020 · 2021 · 2022',
-    title: 'Rinnovo delle cariche sociali',
+    year: '2020 – 2022',
+    title: 'Un Consiglio Direttivo che si rinnova',
     description:
-      'Tre rinnovi del Consiglio Direttivo scandiscono la crescita dell’associazione, mantenendo continuità di missione e codice fiscale.',
+      'Andrea Del Pizzo, presidente dalla fondazione, lascia la carica ad Antonio Civale, eletto dall’Assemblea nel giugno 2020. Dopo le sue dimissioni nell’ottobre 2021, l’Assemblea elegge Marco Di Capua e, dal giugno 2022, Emanuele D’Uva — presidente tuttora in carica.',
+  },
+  {
+    year: '2023',
+    title: 'Cinema Sotto le Stelle',
+    description:
+      'Su richiesta del Comune di Minori, l’associazione organizza una rassegna cinematografica all’aperto nel cortile dell’Istituto Comprensivo “R. Rossellini”, con oltre 20 titoli in cartellone.',
+    image: 'cinema-sotto-le-stelle',
   },
   {
     year: '2026',
