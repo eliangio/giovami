@@ -21,7 +21,7 @@ export function Trasparenza() {
           associazione «Atypical» (stesso Codice Fiscale 95174950659).
         </p>
         <a
-          href="/giovami/documents/statuto-giovami-aps.pdf"
+          href="/documents/statuto-giovami-aps.pdf"
           target="_blank"
           rel="noreferrer"
           className="inline-block bg-blu-notte text-avorio px-5 py-3 rounded-sm font-narrow text-sm uppercase tracking-wide hover:bg-arancio transition-colors"

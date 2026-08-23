@@ -22,7 +22,7 @@ npm run build
 npm run preview
 ```
 
-Il sito è servito sotto `/giovami/` (vedi `base` in `vite.config.ts`), pensato per GitHub Pages come project site.
+Il sito è servito dalla root del dominio (vedi `base` in `vite.config.ts`), pensato per GitHub Pages come org/user site all'indirizzo https://giovamiaps.github.io/.
 
 ## Struttura
 

@@ -83,7 +83,7 @@ export function ChiSiamo() {
       </div>
       <p className="text-sm text-grigio-caldo mb-16">
         Dettagli completi su categorie di soci, quorum e funzionamento nello{' '}
-        <a href="/giovami/documents/statuto-giovami-aps.pdf" className="text-arancio underline">
+        <a href="/documents/statuto-giovami-aps.pdf" className="text-arancio underline">
           Statuto
         </a>
         .
