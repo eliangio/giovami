@@ -3,6 +3,7 @@ type LogoProps = {
   size?: number
   showEts?: boolean
   straight?: boolean
+  animated?: boolean
   className?: string
 }
 
@@ -12,13 +13,20 @@ type LogoProps = {
  * with ETS tucked into the pocket the fold opens beneath "mi".
  *
  * `straight` drops the skew/scale fold, rendering both halves on a flat
- * baseline — used where the angled "piega" doesn't fit the layout.
+ * baseline — used where the angled "piega" doesn't fit the layout (e.g. the
+ * header, at small size).
+ *
+ * `animated` plays the identity guide's entrance sequence once on mount:
+ * giova rises into place (0–0.7s), mi rises along the fold (0.7–1.1s), ETS
+ * opens (1.1–1.8s) — see the `logo-rise-*`/`logo-open-ets` keyframes in
+ * index.css. Only meaningful together with the angled (non-straight) mark.
  */
 export function Logo({
   variant = 'positiva',
   size = 32,
   showEts = true,
   straight = false,
+  animated = false,
   className = '',
 }: LogoProps) {
   const giovaColor = variant === 'positiva' ? '#1C2E5E' : '#FFFFFF'
@@ -27,7 +35,7 @@ export function Logo({
 
   return (
     <span
-      className={`inline-flex items-center ${className}`}
+      className={`inline-flex items-center ${animated ? 'animate-logo' : ''} ${className}`}
       style={{ fontSize: size, lineHeight: 1, paddingBottom: size * 0.3 }}
     >
       <span
@@ -38,6 +46,7 @@ export function Logo({
           fontWeight: 600,
           letterSpacing: '-0.035em',
           color: giovaColor,
+          animation: animated ? 'logo-rise-giova 0.7s ease-out both' : undefined,
         }}
       >
         giova
@@ -51,6 +60,7 @@ export function Logo({
             fontWeight: 700,
             letterSpacing: '-0.04em',
             color: miColor,
+            animation: animated ? 'logo-rise-mi 0.4s ease-out 0.7s both' : undefined,
           }}
         >
           mi
@@ -68,6 +78,7 @@ export function Logo({
               letterSpacing: '0.32em',
               color: etsColor,
               whiteSpace: 'nowrap',
+              animation: animated ? 'logo-open-ets 0.7s ease-out 1.1s both' : undefined,
             }}
           >
             ETS

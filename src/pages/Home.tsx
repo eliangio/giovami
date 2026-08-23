@@ -43,7 +43,7 @@ export function Home() {
       <section className="mx-auto max-w-5xl px-6 pt-20 pb-16 text-center">
         <p className="eyebrow mb-6">Minori (SA) · Costiera Amalfitana</p>
         <Link to="/chi-siamo" className="inline-block">
-          <Logo size={64} straight className="justify-center" />
+          <Logo size={64} animated className="justify-center" />
         </Link>
         <p className="mt-8 text-lg text-oliva-scuro max-w-2xl mx-auto">
           Associazione giovanile — Ente del Terzo Settore. Nata come Atypical nel 2018, oggi{' '}

@@ -14,7 +14,7 @@ export function Header() {
     <header className="sticky top-0 z-10 bg-avorio/95 backdrop-blur border-b border-grigio-caldo/20">
       <div className="mx-auto max-w-5xl px-6 py-4 flex items-center justify-between">
         <NavLink to="/" aria-label="giovami APS — home">
-          <Logo size={22} showEts={false} />
+          <Logo size={22} straight showEts={false} />
         </NavLink>
         <nav className="flex gap-5">
           {links.map((link) => (

@@ -12,7 +12,14 @@
       "Bash(curl -sL https://github.com/cli/cli/releases/download/v2.98.0/gh_2.98.0_linux_amd64.tar.gz -o /tmp/gh.tar.gz)",
       "Bash(tar -tzf /tmp/gh.tar.gz)",
       "Bash(cd *)",
-      "Bash(python3 -)"
+      "Bash(python3 -)",
+      "Bash(npx tsc *)",
+      "Bash(npx eslint *)",
+      "Bash(npx vite *)",
+      "Bash(pkill -f \"vite preview\")",
+      "Bash(/usr/bin/python3 *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
