@@ -40,7 +40,7 @@ export function Trasparenza() {
         <FinancialTable />
         <p className="text-xs text-grigio-caldo mt-4">
           2024–2025: attività economica minima, coerente con la fase di transizione statutaria
-          verso giovami APS.
+          verso giovami.
         </p>
       </section>
 

@@ -34,8 +34,8 @@ export const milestones: Milestone[] = [
   },
   {
     year: '2026',
-    title: 'Da Atypical a giovami APS',
+    title: 'Da Atypical a giovami',
     description:
-      'L’associazione adotta un nuovo Statuto ai sensi del Codice del Terzo Settore, diventando “giovami APS” — stesso C.F. 95174950659, nuova identità visiva, missione aggiornata sugli Obiettivi Agenda 2030.',
+      'L’associazione adotta un nuovo Statuto ai sensi del Codice del Terzo Settore, diventando “giovami” (con l’acronimo APS) — stesso C.F. 95174950659, nuova identità visiva, missione aggiornata sugli Obiettivi Agenda 2030.',
   },
 ]

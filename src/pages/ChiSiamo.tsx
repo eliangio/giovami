@@ -1,25 +1,8 @@
 import { boardMembers } from '../data/board'
 import { milestones } from '../data/milestones'
+import { values } from '../data/values'
 import { BoardMemberCard } from '../components/BoardMemberCard'
 import { TimelineItem } from '../components/TimelineItem'
-
-const values = [
-  {
-    title: 'Confronto',
-    description:
-      'È l’elemento caratterizzante dell’associazione: i differenti punti di vista e contesti culturali di ogni socio contribuiscono al processo creativo e produttivo.',
-  },
-  {
-    title: 'Creatività',
-    description:
-      'I talenti e l’inventiva di ogni socio rendono le nostre iniziative fuori dagli schemi, rispetto a ciò a cui siamo abituati nella Costiera Amalfitana.',
-  },
-  {
-    title: 'Produttività',
-    description:
-      'La molteplicità di idee e l’alto numero di associati garantiscono che i nostri obiettivi culturali e ricreativi vengano portati a termine.',
-  },
-]
 
 const organi = [
   {
@@ -64,7 +47,7 @@ export function ChiSiamo() {
           Nel 2026, in applicazione del Codice del Terzo Settore (D.Lgs. 117/2017),
           l’associazione prosegue senza soluzione di continuità — mantenendo lo stesso Codice
           Fiscale 95174950659 — sotto la nuova denominazione{' '}
-          <strong className="text-blu-notte">giovami APS</strong>. Cambia il nome, non la
+          <strong className="text-blu-notte">giovami</strong>. Cambia il nome, non la
           missione: restare un punto di riferimento per i giovani di Minori e della Costiera
           Amalfitana.
         </p>
@@ -107,10 +90,7 @@ export function ChiSiamo() {
       </p>
 
       <p className="eyebrow mb-3">Consiglio Direttivo 2026</p>
-      <h2 className="text-2xl font-semibold text-blu-notte mb-2">Il team operativo</h2>
-      <p className="text-sm text-grigio-caldo mb-8">
-        Foto e biografie in aggiornamento — la struttura dei ruoli è confermata.
-      </p>
+      <h2 className="text-2xl font-semibold text-blu-notte mb-8">Il team operativo</h2>
       <div className="grid gap-6 sm:grid-cols-3 lg:grid-cols-4 mb-16">
         {boardMembers.map((m) => (
           <BoardMemberCard key={m.name} member={m} />

@@ -14,7 +14,7 @@ export function Contatti() {
       <div className="bg-calce rounded-sm p-6 mb-12 text-sm text-oliva-scuro">
         <p>
           <strong>Nota:</strong> i recapiti qui sotto sono segnaposto — verranno aggiornati con i
-          contatti reali di giovami APS.
+          contatti reali di giovami.
         </p>
       </div>
 
