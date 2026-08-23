@@ -14,6 +14,20 @@ export const milestones: Milestone[] = [
     image: 'logo-atypical',
   },
   {
+    year: '2018',
+    title: 'Bookcrossing',
+    description:
+      'Prima collaborazione dell’associazione con l’Assessorato alla Cultura del Comune di Minori: scambio libero di libri aperto a tutta la comunità.',
+    image: 'bookcrossing-1',
+  },
+  {
+    year: '2018',
+    title: '"Un bagno di libri"',
+    description:
+      'Ancora prima di gestire la biblioteca comunale, i soci portano il prestito bibliotecario sul Lungomare California: la prima edizione di quella che diventerà "Biblioteca in Spiaggia".',
+    image: 'biblioteca-in-spiaggia',
+  },
+  {
     year: '2019',
     title: 'Coppa Reghinna Minor',
     description:
@@ -28,10 +42,24 @@ export const milestones: Milestone[] = [
     image: 'biblioteca-angela-lembo',
   },
   {
+    year: '2020',
+    title: 'Spesa Solidale',
+    description:
+      'Durante l’emergenza Covid-19, l’associazione organizza una raccolta di beni di prima necessità in collaborazione con il Comune di Minori.',
+    image: 'spesa-solidale',
+  },
+  {
     year: '2020 – 2022',
     title: 'Un Consiglio Direttivo che si rinnova',
     description:
       'Andrea Del Pizzo, presidente dalla fondazione, lascia la carica ad Antonio Civale, eletto dall’Assemblea nel giugno 2020. Dopo le sue dimissioni nell’ottobre 2021, l’Assemblea elegge Marco Di Capua e, dal giugno 2022, Emanuele D’Uva — presidente tuttora in carica.',
+  },
+  {
+    year: '2021',
+    title: 'Referendum Eutanasia Legale',
+    description:
+      'L’associazione ospita un banchetto per la raccolta firme a sostegno del referendum nazionale sull’eutanasia legale, come forma di partecipazione civica.',
+    image: 'eutanasia-legale',
   },
   {
     year: '2023',
@@ -45,5 +73,6 @@ export const milestones: Milestone[] = [
     title: 'Da Atypical a giovami',
     description:
       'L’associazione adotta un nuovo Statuto ai sensi del Codice del Terzo Settore, diventando “giovami” (con l’acronimo APS) — stesso C.F. 95174950659, nuova identità visiva, missione aggiornata sugli Obiettivi Agenda 2030.',
+    image: 'logo-giovami',
   },
 ]

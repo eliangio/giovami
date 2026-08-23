@@ -38,13 +38,14 @@ export const projects: Project[] = [
         title: 'Due mandati di gestione',
         description:
           'Due mandati consecutivi affidati all’associazione dal Comune di Minori: il primo nel biennio 2019–2020, il secondo da settembre 2021 a marzo 2023.',
+        image: 'logo-comune-minori',
       },
       {
         period: 'Dal 2019',
         title: 'Catalogazione da zero',
         description:
           'Da un fondo di 4.753 volumi, censiti su un vecchio registro cartaceo e in parte danneggiati da anni di incuria, a un catalogo digitale su Libib.',
-        stat: 'Catalogo finale: 3.255 libri e 86 DVD',
+        image: 'logo-biblioteca',
       },
       {
         period: 'Dal 2018',
@@ -64,7 +65,6 @@ export const projects: Project[] = [
         title: 'Serata Giochi da Tavolo',
         description: 'Serata di giochi da tavolo in biblioteca.',
         image: 'serata-giochi-da-tavolo',
-        stat: '12 partecipanti',
       },
       {
         period: 'Aprile 2022',
@@ -72,33 +72,30 @@ export const projects: Project[] = [
         description:
           'Percorso per le competenze trasversali e l’orientamento con l’Istituto Marini Gioia di Amalfi, su patrimonio culturale e marketing.',
         image: 'pcto-laboratorio',
-        stat: '6 studenti partecipanti',
       },
       {
         period: 'Dal 19 agosto 2022',
         title: 'Gruppo di studio',
         description: 'Aperture della biblioteca fuori dagli orari convenzionali, organizzate tramite un canale Telegram dedicato.',
-        stat: '24 iscritti al canale',
+        image: 'gruppo-studio',
       },
       {
         period: '22 agosto 2022',
         title: 'Corso di LaTeX',
         description: 'Introduzione a LaTeX con Overleaf, utile per chi studia o lavora in ambito accademico.',
         image: 'corso-latex',
-        stat: '6 partecipanti',
       },
       {
         period: 'Dal 18 febbraio 2023',
         title: 'Corso di inglese',
         description: 'Corso di lingua inglese con insegnante madrelingua, ogni sabato pomeriggio, rivolto in particolare agli operatori del settore turistico.',
         image: 'corso-inglese',
-        stat: '12 partecipanti',
       },
       {
         period: '15 febbraio · 1 marzo 2023',
         title: 'SWAP Bambini',
-        description: 'Due appuntamenti di scambio gratuito di oggetti e vestiti per bambini.',
-        stat: '13 e 16 partecipanti',
+        description: 'Letture e attività a tema per fasce d’età da 0 a 10 anni, con scambio gratuito di libri e oggetti tra famiglie.',
+        image: 'swap-bambini',
       },
     ],
   },
@@ -126,14 +123,12 @@ export const projects: Project[] = [
         title: 'Edizione 2023',
         description: 'Dal 14 luglio al 10 agosto, formato a gironi seguito da playoff.',
         image: 'coppa-reghinna-minor-2023',
-        stat: '16 squadre',
       },
       {
         period: '2024',
         title: 'Edizione 2024',
         description: 'Torneo di calcio a 5, girone unico seguito da playoff.',
         image: 'coppa-reghinna-minor-2024',
-        stat: '16 squadre',
       },
       {
         period: '2025',
@@ -161,7 +156,6 @@ export const projects: Project[] = [
         description:
           'Proiezioni ogni sera alle 21:00 nel cortile dell’Istituto Comprensivo "R. Rossellini", con oltre 20 titoli in cartellone tra cui Avatar: La Via dell’Acqua, Barbie, John Wick 4, Top Gun: Maverick e La Sirenetta.',
         image: 'cinema-sotto-le-stelle',
-        stat: 'Ingresso 6€ (ridotto 5€) · capienza autorizzata 100 posti',
       },
     ],
   },
