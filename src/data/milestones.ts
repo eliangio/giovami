@@ -13,17 +13,17 @@ export const milestones: Milestone[] = [
       'Un gruppo di ragazzi di Minori fonda l’Associazione Atypical: cultura, divertimento e senso di appartenenza al territorio per la fascia giovanile della Costiera Amalfitana.',
   },
   {
-    year: '2018–2019',
-    title: 'Prima Coppa Reghinna Minor',
+    year: '2019',
+    title: 'Coppa Reghinna Minor',
     description:
-      'Il torneo di calcetto amatoriale diventa uno degli appuntamenti fissi dell’associazione, con la gestione autonoma di iscrizioni e cassa.',
+      'Atypical assume l’organizzazione del torneo di calcetto amatoriale — già alla sua quinta edizione, una tradizione locale precedente alla nascita dell’associazione.',
     image: 'coppa-reghinna-minor',
   },
   {
-    year: '2019–2022',
+    year: '2019–2023',
     title: 'Biblioteca Comunale “Angela Lembo”',
     description:
-      'I soci autogestiscono la biblioteca: bookcrossing, letture in spiaggia, corsi e uno dei punti wi-fi più stabili del paese diventano un punto di ritrovo invernale.',
+      'I soci rilanciano e catalogano da zero la biblioteca comunale — oltre 3.250 libri, adesione al Polo SBN Napoli — trasformandola in un punto di ritrovo per lo studio e l’aggregazione.',
     image: 'biblioteca-angela-lembo',
   },
   {
